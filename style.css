@@ -1,0 +1,148 @@
+/*Variables*/
+/*Basic style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+}
+
+img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 30px;
+  border: none;
+  color: black;
+  background-color: yellow;
+  transition: 0.4s ease;
+}
+.btn:hover {
+  color: yellow;
+  background-color: black;
+}
+
+/*ASIDE**/
+aside {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 250, 255, 0.3)), url(img/1.jpg);
+  height: 100vh;
+  flex: 0 0 45%;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  flex-wrap: wrap;
+}
+aside img {
+  width: 40%;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 20px auto;
+}
+aside h1 {
+  font-size: 5rem;
+  color: black;
+  font-weight: 500;
+}
+aside h1 span {
+  color: yellow;
+}
+aside .icon i {
+  color: black;
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+
+.main {
+  flex-direction: 0 0 60%;
+  overflow: scroll;
+  height: 100vh;
+}
+.main article h2 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+.main article h2::after {
+  background-color: yellow;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 3px;
+  margin: 20px auto;
+}
+.main article p {
+  text-align: justify;
+  font-size: 18px;
+  margin: 20px;
+}
+.main article .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main article .row .col {
+  flex: 0 0 47%;
+  margin-left: 10px;
+}
+@media (max-width: 786px) {
+  .main article .row .col {
+    flex: 0 0 100%;
+  }
+}
+.main article .row .col img {
+  width: 100%;
+}
+.main article .row .col img:hover {
+  opacity: 0.6;
+  transition: 0.4s ease;
+  transform: scale(110%);
+}
+.main article .row .col h4 {
+  font-size: 1.9rem;
+}
+.main footer h2 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+.main footer h2::after {
+  background-color: yellow;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 3px;
+  margin: 20px auto;
+}
+.main footer form {
+  padding: 60px;
+}
+.main footer form input {
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .main footer form input {
+    margin-bottom: 10px;
+  }
+}
+.main footer form ::-moz-placeholder {
+  color: black;
+}
+.main footer form ::placeholder {
+  color: black;
+}
+.main footer p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
